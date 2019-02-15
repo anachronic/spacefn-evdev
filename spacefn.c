@@ -16,6 +16,8 @@ unsigned int key_map(unsigned int code) {
     switch (code) {
     case KEY_BRIGHTNESSDOWN: // my magical escape button
         exit(0);
+
+        // arrow keys a la vim
     case KEY_H:
         return KEY_LEFT;
     case KEY_J:
@@ -25,6 +27,7 @@ unsigned int key_map(unsigned int code) {
     case KEY_L:
         return KEY_RIGHT;
 
+        // Home, End, PgUp, PgDown
     case KEY_U:
         return KEY_HOME;
     case KEY_COMMA:
@@ -33,6 +36,10 @@ unsigned int key_map(unsigned int code) {
         return KEY_PAGEUP;
     case KEY_O:
         return KEY_END;
+    case KEY_I:
+        return KEY_INSERT;
+
+        // Music control
     case KEY_N:
         return KEY_NEXTSONG;
     case KEY_P:
@@ -40,6 +47,7 @@ unsigned int key_map(unsigned int code) {
     case KEY_M:
         return KEY_PLAYPAUSE;
 
+        // escape
     case KEY_B:
         return KEY_SPACE;
     }
