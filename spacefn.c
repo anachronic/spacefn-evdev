@@ -38,6 +38,8 @@ unsigned int key_map(unsigned int code) {
         return KEY_END;
     case KEY_I:
         return KEY_INSERT;
+    case KEY_Y:
+        return KEY_DELETE;
 
         // Music control
     case KEY_N:
@@ -50,6 +52,32 @@ unsigned int key_map(unsigned int code) {
         // escape
     case KEY_B:
         return KEY_SPACE;
+
+        // F1 thru F12
+    case KEY_1:
+        return KEY_F1;
+    case KEY_2:
+        return KEY_F2;
+    case KEY_3:
+        return KEY_F3;
+    case KEY_4:
+        return KEY_F4;
+    case KEY_5:
+        return KEY_F5;
+    case KEY_6:
+        return KEY_F6;
+    case KEY_7:
+        return KEY_F7;
+    case KEY_8:
+        return KEY_F8;
+    case KEY_9:
+        return KEY_F9;
+    case KEY_0:
+        return KEY_F10;
+    case KEY_MINUS:
+        return KEY_F11;
+    case KEY_EQUAL:
+        return KEY_F12;
     }
 
     return 0;
